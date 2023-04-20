@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    command: python manage.py sendtestemail ${EMAIL_TEST_SEND}
+    ports:
+      - "${APP_PORT}:8000"
