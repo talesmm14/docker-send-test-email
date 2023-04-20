@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "docker-send-test-email"
+version = "0.1.0"
+description = ""
+authors = ["tales.melquiades <tales.melquiades@secad.to.gov.br>"]
+readme = "README.md"
+packages = [{include = "docker_send_test_email"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2"
+django-environ = "^0.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
